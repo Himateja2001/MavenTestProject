@@ -13,18 +13,18 @@ import org.testng.annotations.Test;
 
 public class LoginTestPage{
     public static WebDriver driver;
-    @Test
+//    @Test
     @BeforeAll
     public static void before_all(){
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
     }
-    @Test
+//    @Test
     @Given("User is on login page")
     public void userIsOnLoginPage() {
         driver.get("https://www.saucedemo.com/v1/");
     }
-    @Test
+//    @Test
     @When("user enters valid credentials")
     public void userEntersValidCredentials() {
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
@@ -32,7 +32,7 @@ public class LoginTestPage{
         driver.findElement(By.id("login-button")).click();
     }
 
-    @Test
+//    @Test
     @Then("user should be navigated to Home page successfully")
     public void userShouldBeNavigatedToHomePageSuccessfully() {
         String title= driver.getTitle();
