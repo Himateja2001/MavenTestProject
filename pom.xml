@@ -81,7 +81,7 @@
                 <version>2.22.2</version>
                 <configuration>
                     <includes>
-                        <include>**/LoginTestPage</include> <!-- Ensure your runner is included -->
+                        <include>**/TestRunner.java</include> <!-- Ensure your runner is included -->
                     </includes>
                 </configuration>
             </plugin>
